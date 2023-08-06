@@ -1,13 +1,13 @@
 /*
-*	512 bytes / sector ‚Ì ‚l‚‚ƒ@‚c‚‰‚“‚‹‚ðƒRƒs[‚·‚éB
+*	512 bytes / sector ã® ï¼­ï½ï½ƒã€€ï¼¤ï½‰ï½“ï½‹ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 *
-*Žg—p–@
-*	512 byte / sector ‚ÉƒtƒH[ƒ}ƒbƒg‚µ‚½ƒfƒBƒXƒNƒhƒ‰ƒCƒu‚P‚É“ü‚ê‚Ä
+*ä½¿ç”¨æ³•
+*	512 byte / sector ã«ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã—ãŸãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–ï¼‘ã«å…¥ã‚Œã¦
 *
 *	Mcopy
 */
 
-/*ƒRƒ“ƒpƒCƒ‹‚É‚ÍƒIƒvƒVƒ‡ƒ“ -Y ‚ð‚Â‚¯‚é‚±‚Æ*/
+/*ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã«ã¯ã‚ªãƒ—ã‚·ãƒ§ãƒ³ -Y ã‚’ã¤ã‘ã‚‹ã“ã¨*/
 
 
 
@@ -25,7 +25,7 @@ char **argv;
 	if((buf = MALLOC(BUF_SIZE)) < 0)
 		error(2);
 
-	printf("ƒhƒ‰ƒCƒu‚O„„‚P‚Ì‚b‚n‚o‚x‚µ‚Ü‚·B‚æ‚ë‚µ‚¢‚Å‚·‚Ëi’†Ž~O‚bj");
+	printf("ãƒ‰ãƒ©ã‚¤ãƒ–ï¼ï¼žï¼žï¼‘ã®ï¼£ï¼¯ï¼°ï¼¹ã—ã¾ã™ã€‚ã‚ˆã‚ã—ã„ã§ã™ã­ï¼ˆä¸­æ­¢ï¼¾ï¼£ï¼‰");
 	getch();
 	printf("\n");
 
@@ -41,7 +41,7 @@ char **argv;
 		B_READ(0x90 * 256 + 0x70, rec_conv(pos), fsize, buf); /* no error check !!*/
 		B_WRITE(0x91 * 256 + 0x70, rec_conv(pos), fsize, buf); /* no error check !!*/
 	}
-	printf("ƒRƒs[‚ÍŠ®—¹‚µ‚Ü‚µ‚½\n");
+	printf("ã‚³ãƒ”ãƒ¼ã¯å®Œäº†ã—ã¾ã—ãŸ\n");
 }
 
 rec_conv(pos)

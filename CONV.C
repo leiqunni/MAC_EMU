@@ -1,14 +1,14 @@
 /*
-*	‚g‚•‚‚‚Ž‚U‚W‚‹‚Ìƒtƒ@ƒCƒ‹‚ðA512 bytes / sector ‚Ì
-*	ƒfƒBƒXƒN‚ÉƒRƒ“ƒo[ƒg‚·‚éB
+*	ï¼¨ï½•ï½ï½ï½Žï¼–ï¼˜ï½‹ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã€512 bytes / sector ã®
+*	ãƒ‡ã‚£ã‚¹ã‚¯ã«ã‚³ãƒ³ãƒãƒ¼ãƒˆã™ã‚‹ã€‚
 *
-*Žg—p–@
-*	512 byte / sector ‚ÉƒtƒH[ƒ}ƒbƒg‚µ‚½ƒfƒBƒXƒNƒhƒ‰ƒCƒu‚P‚É“ü‚ê‚Ä
+*ä½¿ç”¨æ³•
+*	512 byte / sector ã«ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã—ãŸãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–ï¼‘ã«å…¥ã‚Œã¦
 *
 *	conv filename
 */
 
-/*ƒRƒ“ƒpƒCƒ‹‚É‚ÍƒIƒvƒVƒ‡ƒ“ -Y ‚ð‚Â‚¯‚é‚±‚Æ*/
+/*ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã«ã¯ã‚ªãƒ—ã‚·ãƒ§ãƒ³ -Y ã‚’ã¤ã‘ã‚‹ã“ã¨*/
 
 
 

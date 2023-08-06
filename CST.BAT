@@ -1,6 +1,6 @@
 echo off
 ECHO [2A
-rem	MoJa�쐬
+rem	MoJa作成
 
 if "%1" == ""   goto errmes1
 if "%1" == "-?" goto errmes1
@@ -24,7 +24,7 @@ if "%1" == "8m" goto RAM8MB
 goto errmes1
 
 :RAM2MB
-echo 2MBytes�p�Ɋ��ݒ肵�܂��B���X�������������B
+echo 2MBytes用に環境設定します。少々お持ち下さい。
 echo r mac.z,.pc > MAC.PAT
 echo mel .pc+1e 001D0000 >> MAC.PAT
 echo mel .pc+22 001E0000 >> MAC.PAT
@@ -32,7 +32,7 @@ echo r ROM,1E0000 > start.db
 goto pat_go
 
 :RAM4MB
-echo 4MBytes�p�Ɋ��ݒ肵�܂��B���X�������������B
+echo 4MBytes用に環境設定します。少々お持ち下さい。
 echo r mac.z,.pc > MAC.PAT
 echo mel .pc+1e 003D0000 >> MAC.PAT
 echo mel .pc+22 003E0000 >> MAC.PAT
@@ -40,7 +40,7 @@ echo ROM,3E0000 > start.db
 goto pat_go
 
 :RAM6MB
-echo 6MBytes�p�Ɋ��ݒ肵�܂��B���X�������������B
+echo 6MBytes用に環境設定します。少々お持ち下さい。
 echo r mac.z,.pc > MAC.PAT
 echo mel .pc+1e 005D0000 >> MAC.PAT
 echo mel .pc+22 005E0000 >> MAC.PAT
@@ -48,7 +48,7 @@ echo ROM,5E0000 > start.db
 goto pat_go
 
 :RAM8MB
-echo 8MBytes�p�Ɋ��ݒ肵�܂��B���X�������������B
+echo 8MBytes用に環境設定します。少々お持ち下さい。
 echo r mac.z,.pc > MAC.PAT
 echo mel .pc+1e 007D0000 >> MAC.PAT
 echo mel .pc+22 007E0000 >> MAC.PAT
@@ -125,19 +125,19 @@ db < MAC.PAT > nul
 del mac.pat > nul
 db < PATCH.SYS > nul
 del PATCH.SYS > nul
-echo %1Bytes�p��MAC.Z��Patch�𓖂Ă܂����BROM�ɂ�Patch�𓖂Ă܂����B
-echo Macintosh Emulator�̋N���́Astart.bat�����s���ĉ������B
+echo %1Bytes用にMAC.ZにPatchを当てました。ROMにもPatchを当てました。
+echo Macintosh Emulatorの起動は、start.batを実行して下さい。
 goto end
 
 :errmes1
-echo Macintosh Emulator�p�J�X�^�}�C�YBatch
-echo ���� CST nM (n��2,4,6,8�̂ݎw��ł��܂��B)
+echo Macintosh Emulator用カスタマイズBatch
+echo 書式 CST nM (nは2,4,6,8のみ指定できます。)
 goto end
 :errmes2
-echo ROM�t�@�C������������܂���BPatch�����Ă��Ȃ���B
+echo ROMファイルが見当たりません。Patchが当てられないよ。
 goto end
 :errmes3
-echo MAC.Z�t�@�C������������܂���BPatch�����Ă��Ȃ���B
+echo MAC.Zファイルが見当たりません。Patchが当てられないよ。
 goto end
 
 :end

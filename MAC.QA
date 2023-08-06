@@ -1,105 +1,105 @@
 
-(�p�P)
-�Ƃ���ŁAMACSOFT2.IMG�̕��Ȃ�ł����ǁA�f�B�X�N�̓���ւ���
-�ǂ̂悤�ɂ���΁A��낵����ł��傤���H
-(�`�P)
- �h���C�u�P�Ƀf�B�X�N�����āu�o�^�v�L�[�������܂��B�C�W�F�N�g�̓f�B�X�N
-�A�C�R�����u�S�~���v�ɓ���ĉ������B
+(Ｑ１)
+ところで、MACSOFT2.IMGの方なんですけど、ディスクの入れ替えは
+どのようにすれば、よろしいんでしょうか？
+(Ａ１)
+ ドライブ１にディスクを入れて「登録」キーを押します。イジェクトはディスク
+アイコンを「ゴミ箱」に入れて下さい。
 
-(�p�Q)
-�ꉞ�A��ʂ��file��down�����̂ł����Adb < patch.sys�̕�����
-�x�Ⴊ�N���Ă��܂��̂ŁA���������Ǝv���A���[�����܂����B
-�@patch.sys�̒��g�S�̂́Aq �ȊO�͑S�� Bat parameter ��error��
-�A���Ă��邾���ŁA�N������ƁA�ǂ����\�����Ă��܂��܂��B
-db.x �ɂ�MEL .Z0+�����Ƃ�����command�͂Ȃ��Ǝv���܂������A
-����͈�̂Ȃ�ł��傤���B(^^;��޶ �� ��Ͼݡ
-(�`�Q)
-  �������G�f�B�g�R�}���h��Debugger ver1.x��ver2.0�ȍ~�ł͈قȂ�܂��B
-patch.sys�ɏ����ꂽ���̂�ver2.x�p�ł����Aver1.x�̃f�o�b�J�[���g�p�����ꍇ�A
-�uBat parameter�v�Ɓuerror�v���������܂��B�Ώ��@�Ƃ��ẮAver1.x�̃f�o�b�J�[��
-�g�p����ꍇ�́AMEL/MEW�R�}���h��EL/EW�ɒu�����Ďg�p���ĉ������B�܂��AW���߂�
-�p�b�`���Ă��ς�ROM���t�@�C���̗����Ă����Ύ��񂩂�p�b�`���Ă��s�Ȃ��K�v��
-�Ȃ��Ȃ�܂��B
+(Ｑ２)
+一応、一通りのfileをdownしたのですが、db < patch.sysの部分で
+支障が起きていますので、聞きたいと思い、メールしました。
+　patch.sysの中身全体は、q 以外は全部 Bat parameter とerrorが
+帰ってくるだけで、起動すると、どうも暴走してしまいます。
+db.x にはMEL .Z0+････といったcommandはないと思いましたが、
+あれは一体なんでしょうか。(^^;ｵﾊﾞｶ ﾃﾞ ｽﾐﾏｾﾝ｡
+(Ａ２)
+  メモリエディトコマンドがDebugger ver1.xとver2.0以降では異なります。
+patch.sysに書かれたものはver2.x用ですが、ver1.xのデバッカーを使用した場合、
+「Bat parameter」と「error」が発生します。対処法としては、ver1.xのデバッカーを
+使用する場合は、MEL/MEWコマンドをEL/EWに置換して使用して下さい。また、W命令で
+パッチ当てが済んだROMをファイルの落しておけば次回からパッチ当てを行なう必要が
+なくなります。
 
-�i�p�R�j
-�l�`�b�G�~�����[�^�[�̓o�[�W�����A�b�v���Ă���̂��B
-�i�`�R�j
-�m��܂���B�\�ł́A�n�[�h�f�B�X�N�ɑΉ����Ă��̂�A�A�b�v���g�[�N�ɑΉ�����
-���̂�����ƕ����܂������E�E�E
+（Ｑ３）
+ＭＡＣエミュレーターはバージョンアップしているのか。
+（Ａ３）
+知りません。噂では、ハードディスクに対応してものや、アップルトークに対応した
+ものもあると聞きましたが・・・
 
-�i�p�S�j
-���̂n�r���Ăr�x�r�s�d�l�V�������Ǝv���̂ł�������ɂ͑Ή����Ă��Ȃ��̂�
-�i�`�S�j
-���݂�Macintosh��OS�̍ŐV�o�[�W������System7.1J�ł��BSystem7.1J�̏ꍇ�A�J�l�[��
-������1M�o�C�g�A�V�F����400k�o�C�g����܂��̂ŁA�t���b�s�[�x�[�X�ŗ����グ�鎖��
-�����I�ɕs�\�ł��B
+（Ｑ４）
+今のＯＳってＳＹＳＴＥＭ７だったと思うのですがそれには対応していないのか
+（Ａ４）
+現在のMacintoshのOSの最新バージョンはSystem7.1Jです。System7.1Jの場合、カネール
+だけで1Mバイト、シェルで400kバイトありますので、フロッピーベースで立ち上げる事は
+物理的に不可能です。
 
-�i�p�T�j
-�l�`�b�G�~�����[�^�[�̃J�}�^�C�Y�̎d���ɂ��ċ����ĉ������B
-�i�`�T�j
+（Ｑ５）
+ＭＡＣエミュレーターのカマタイズの仕方について教えて下さい。
+（Ａ５）
 filaname MAC.Z
 offset	name		size
-+$22	MemSize		dc.l	$100000		�������T�C�Y��1M(Max:8M-128k)
++$22	MemSize		dc.l	$100000		メモリサイズは1M(Max:8M-128k)
 +$26	rom_base	dc.l	ROM_ADDRESS	ROM image address
 +$2a	screen		dc.l	$E00000		screen base(default:E00000)
-+$2e	v_res		dc.w	$200		V ��ʏc�T�C�Y
-+$30	h_res		dc.w	$300		H ��ʉ��T�C�Y
++$2e	v_res		dc.w	$200		V 画面縦サイズ
++$30	h_res		dc.w	$300		H 画面横サイズ
 
-�i�p�U�j
-�g�c�c�i�r�b�r�h�j�͓ǂ߂Ȃ��̂�
-�i�`�U�j
-����炢�Ƃƌ����͕̂��������͂���܂��������͒m��܂���B�������݂����Ƃ��Ă�
-Macintosh�{�̂��Ȃ��Ɖ����ł��Ȃ��ł��傤�B89�N������Plus��1FDD���������Ȃ���
-�g�p����̂����ʂł�������
+（Ｑ６）
+ＨＤＤ（ＳＣＳＩ）は読めないのか
+（Ａ６）
+あるらいとと言うのは聞いた事はありますが実物は知りません。ただ存在したとしても
+Macintosh本体がないと何もできないでしょう。89年当時はPlusで1FDDを交換しながら
+使用するのが普通でしたから
 
-�i�p�V�j
-�ł���̒N���������ł��傤���H
-�i�`�V�j
-  Macintosh Emu���o���́A�k���l�b�g��89�N�̌㔼�ł��B�쐬�҂́A�l�`�b�g���ł��B
-�����AMacintosh�ƌ����΂܂�Plus�̎��゠��AMacEmu�̕����l�i�A�X�s�[�h�A��ʃT�C�Y�A
-���������ɏ�Ŕ��ɘb��ɂȂ�܂����B�X����MacEmu�̃f�����s�Ȃ������A�A�b�v���R��
-�s���[�^����N���[���������Ƃ����b������܂����B���̂���́A�{�[�h��ł����낢��
-�������݂�����܂������A�N����(������Ȃ���)ROM��OS���A�b�v���ꂽ���Ŗ��ɂȂ�
-���̌�Mac Emu�ɂ��ăl�b�g��Řb��͋֋�ɂȂ�܂����B
+（Ｑ７）
+でも一体誰が作ったんでしょうか？
+（Ａ７）
+  Macintosh Emuが出たは、北京ネットで89年の後半です。作成者は、ＭＡＣＨ氏です。
+当時、Macintoshと言えばまだPlusの時代あり、MacEmuの方が値段、スピード、画面サイズ、
+メモリ共に上で非常に話題になりました。店頭でMacEmuのデモを行なった所、アップルコン
+ピュータからクレームが来たという話もありました。そのころは、ボード上でもいろいろ
+書き込みがありましたが、誰かが(私じゃないよ)ROMとOSがアップされた事で問題になり
+その後Mac Emuについてネット上で話題は禁句になりました。
 
 		Macintosh Plus		X68000 ACE
-����		'86/10�`'90/10		'87/10�`
+発売		'86/10～'90/10		'87/10～
 CPU		MC68000(8MHz)		MC68000(10MHz)
 FDD		3.5" 2DD(800k)		5.25" 2HD*2(1.2M)
-�ő哋��RAM	4MB			8MB(System6�̐����ɂ��)
-CRT		512*384(����)		768*512(����)
+最大搭載RAM	4MB			8MB(System6の制限による)
+CRT		512*384(白黒)		768*512(白黒)
 
-�i�p�W�j
-Macintosh Emulator�f�B�X�N�R���o�[�g���@�ɂ��ċ����ĉ������B
-�i�`�W�j
-  Macintosh�̃h���C�u�͓Ǝ��̃h���C�u���g�p���Ă���ׁAMacintosh�̃t�H�[�}�b�g
-�̃f�B�X�N�͑��̃p�\�R���ł͓ǂݍ��ݎ����ł��܂���B���̂��߃C���[�W�t�@�C��
-��Macintosh���ō쐬���āA�C���[�W�t�@�C����X68000���Ɏ����Ă�����@��������
-�܂���BMacintosh�̃t�H�[�}�b�g����͂��āA�ʐM��Ń_�E�����[�h�����t�@�C����
-���ڏ������ޕ��@���l�����܂�����ʓI�ł͂���܂���B
-��p�̃c�[�����������悤�ł������E�E�E
+（Ｑ８）
+Macintosh Emulatorディスクコンバート方法について教えて下さい。
+（Ａ８）
+  Macintoshのドライブは独自のドライブを使用している為、Macintoshのフォーマット
+のディスクは他のパソコンでは読み込み事ができません。そのためイメージファイル
+はMacintosh側で作成して、イメージファイルをX68000側に持ってくる方法しかあり
+ません。Macintoshのフォーマットを解析して、通信上でダウンロードしたファイルを
+直接書き込む方法が考えられますが一般的ではありません。
+専用のツールもあったようでしたが・・・
 
-�E2DD 800k�f�B�X�N��p��
-�E�R���o�[�g�������t�@�C��������B
-�EApple�W���̃f�B�X�N�C���[�W�쐬�c�[��3.5flopy Duppul�ŃC���[�W�t�@�C���쐬
-�E�t�@�C���]����x68000�ɓ]������B�t�@�C������abc.img�Ƃ���B
-�E�}�b�N�o�C�i��������+�����폜����B
-DB.X���N���B 
+・2DD 800kディスクを用意
+・コンバートしたいファイルを入れる。
+・Apple標準のディスクイメージ作成ツール3.5flopy Duppulでイメージファイル作成
+・ファイル転送でx68000に転送する。ファイル名をabc.imgとする。
+・マックバイナリ部分と+αを削除する。
+DB.Xを起動。 
 X68k Debugger version 3.00 Copyright 1987-1993 SHARP/Hudson
 Micro Processor Unit:16bit MC68000
 Floating Point Co Processor:Softwere emulation.
 -r abc.img,.pc
 -w abc.img,.pc+\212,.a1-1
 -q
-�擪212�o�C�g���s�p(�}�b�N�o�C�i��+��)�Ȃ̂ō폜����B
-f512.x���|������A�C���[�W�t�@�C�����R�s�[(conv.x)�̌�f12.x�����s�����
-�e�ʂ�������Bf512.x�̌ゾ�Ɩ����Bf12.x��������f�B�X�N�ł��N���͉\�B
+先頭212バイトが不用(マックバイナリ+α)なので削除する。
+f512.xを掛けた後、イメージファイルをコピー(conv.x)の後f12.xを実行すると
+容量が増える。f512.xの後だと無効。f12.xをやったディスクでも起動は可能。
 
-�i�p�X�j
-�@�ǂ������܂��N���ł��܂���B
-  �ǂ������܂������Ȃ���ł���(^^;;
-�@�ł���΃A�h�o�C�X�𒸂��܂���ł��傤���H
-�����ꂽ�ʂ�ɂ�����̂ł����A���삵�܂���B
-�i�`�X�j
-X68030��X68000�ł�FPU�����ڂ���Ă���}�V�[���̏ꍇ���삵�܂���B��͒m��܂���B
-���͓ǂ�Ŋ撣���ĉ������B
+（Ｑ９）
+　どうもうまく起動できません。
+  どうもうまくいかないんですよ(^^;;
+　できればアドバイスを頂けませんでしょうか？
+書かれた通りにやったのですが、動作しません。
+（Ａ９）
+X68030やX68000でもFPUが搭載されているマシーンの場合動作しません。後は知りません。
+文章読んで頑張って下さい。

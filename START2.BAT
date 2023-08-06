@@ -1,8 +1,8 @@
 echo off
 echo [2A
 if not exist start.db  goto errmes
-echo Macintosh Emulator‚ğ‹N“®‚µ‚Ü‚·B 
+echo Macintosh Emulatorã‚’èµ·å‹•ã—ã¾ã™ã€‚ 
 db.x < start.db
 :errmes
-echo ‚Ü‚¸‰‚ß‚ÉACST.bat‚ğ‹N“®‚µ‚Äƒƒ‚ƒŠİ’è‚ğs‚È‚Á‚Ä‰º‚³‚¢B
+echo ã¾ãšåˆã‚ã«ã€CST.batã‚’èµ·å‹•ã—ã¦ãƒ¡ãƒ¢ãƒªè¨­å®šã‚’è¡Œãªã£ã¦ä¸‹ã•ã„ã€‚
 :end

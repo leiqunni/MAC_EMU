@@ -1,16 +1,16 @@
 /*
-*	�h���C�u�P�̃f�B�X�N�� 512 bytes /sector �Ńt�H�[�}�b�g����
+*	ドライブ１のディスクを 512 bytes /sector でフォーマットする
 *
-*�g�p�@
-*	�h���C�u�P�Ƀt�H�[�}�b�g����f�B�X�N������
+*使用法
+*	ドライブ１にフォーマットするディスクを入れて
 *
 *	f512
 *
 */	
 
-/*�R���p�C���ɂ̓I�v�V���� -Y �����邱��*/
+/*コンパイルにはオプション -Y をつけること*/
 
-/*���Ӂ@�G���[�`�F�b�N�͑S�����Ă��Ȃ��I�I*/
+/*注意　エラーチェックは全くしていない！！*/
 
 
 
@@ -27,7 +27,7 @@ main()
 	int track, i;
 	char *ptr;
 
-	printf("\007�h���C�u�P�̃f�B�X�N���t�H�[�}�b�g���܂��B��낵���ł��ˁi���~�O�b�j");
+	printf("\007ドライブ１のディスクをフォーマットします。よろしいですね（中止＾Ｃ）");
 	getch();
 	printf("\n");
 
@@ -44,6 +44,6 @@ main()
 			 + (track % 2) * 0x00000100 + 1, 4 * MAX_SECTOR, format_data);
 		printf("track = %3.3d\r", track);
 	}
-	printf("�t�H�[�}�b�g�͊������܂���\n");
+	printf("フォーマットは完了しました\n");
 }
 
