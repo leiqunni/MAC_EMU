@@ -1,0 +1,66 @@
+
+前にアップしたものなんですが、ROMのベースアドレスをカスタマイズしたものをアップ
+してしまい、6MBytes以上搭載した機種でないと動作しないとのメールを貰いその訂正及び
+Mac Emulatorの使い方についての説明です。
+
+Mac Emulator(以下、Mac Emu)は動作させるためには、以下のファイルが必要です。
+
+F512.X		MacDisk Format
+CONV.X		MacImage → MacDisk(ファイルをMacディスクにコンバートする)
+CV12.X		800kディスクを1.2Mに変換する。
+MAC.Z		Mac Emu本体
+start.bat	起動用batch
+patch.sys	ROMのpatchについての記述
+q		q
+
+ROM		Macintosh PlusのROMイメージ  01-164にあります。
+MACSOFT1.IMG	MacのOSとソフト		     01-170にあります。
+
+
+CST.BAT		カスタマイズ用batch
+START2.BAT	カスタマイズ用batch
+README.DOC	これ
+README.ORG	作者が作ったファイル
+
+	*	*	*	*	*	*	*	*	*
+
+	<<< Mac Emuの起動方法 >>>
+
+１　ドライブ１にブランクのディスクを入れる。
+２  ディスクをフォーマットする。
+　  n:\ > F512 
+    を実行
+３　macsoft1.imgをディスク上に置いて
+    n:\ > conv macsoft1.img
+４　終ったらrom,start.bat,mac.z,qが同一path上に存在している事を確認してstart.batを実行
+
+
+	*	*	*	*	*	*	*	*	*
+
+	カスタマイズ
+
+cst.batとstart.batについては私が適当に作ったものなので動作確認してません。
+4M/6M/8M用にカスタマイズする為のバッチファイルです。注意して利用して下さい。
+
+MAC.Zの環境設定を行ないます。自分のパソコンが搭載しているメモリを指定して下さい。
+但し、8Mまで( 例 n:\ > cst 6M    /* 6MB搭載されている場合
+
+n:\ > cst nM			/* メモリサイズを変更します。
+
+ディスクの作成
+
+フロッピードライブ１にブランクディスクを入れる。
+n:\ > F512			/* ディスクをフォマット
+n:\ > CONV MACSOFT1.IMG		/* Macディスクが作成される。
+n:\ > CV12			/* 800k → 1.2Mになる。
+
+作成されたMacディスクをフロッピードライブ０に入れる。
+
+n:\ > start.bat
+
+Welcome Macintoshが表示Mac Emuが起動する。
+
+(注意	n: > のnはMacEmuが入っているドライブとします。)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+/* === End of readme.doc === */
